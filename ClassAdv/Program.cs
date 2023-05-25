@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -14,9 +15,17 @@ namespace ClassAdv
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            // 소멸자 실습
+            Product product1 = new Product("과자", 1000);
+            Product product2 = new Product("뺴뺴로", 1500);
+            Product product3 = new Product("닭꼬치", 3500);
+            Product product4 = new Product("탕후루", 3000);
+
+            Console.WriteLine("안녕하세요");
+            Console.WriteLine("안녕하세요");
+            Console.WriteLine("안녕하세요");
+            Console.WriteLine("안녕하세요");
+            Console.WriteLine("안녕하세요");
         }
     }
 }
